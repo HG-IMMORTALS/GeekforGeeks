@@ -1,0 +1,21 @@
+class Solution{
+    public:
+    int search(int A[], int l, int h, int key)
+    {
+        int res=0;
+        while(l<h)
+        {
+            if(A[l]==key)
+            {
+                return l;
+            }
+            if(A[h]==key)
+            {
+                return h;
+            }
+            l++;
+            h--;
+        }
+        return -1;
+    }
+};
